@@ -23,7 +23,7 @@ def call(Map param){
 			stage('Deliver') {
 				steps {
 					withEnv([
-						'SERVER=' param.server
+						'SERVER=' +param.server
 					]){
 						sh(deliver)
 					}
